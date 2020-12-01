@@ -6,6 +6,6 @@
   <rosparam file="$(find Proyecto-PAI)/config/effort_controller_config.yaml" command="load"/>
 
   <!-- Load head controller configurations -->
-  <include file="$(find Proyecto-PAI)/launch/$(arg model_type)_control.launch.xml"/>
+  <include file="find Proyecto-PAI/launch/$(arg model_type)_control.launch.xml"/>
 
 </launch>

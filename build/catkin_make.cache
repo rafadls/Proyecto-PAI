@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/rafael/Proyecto-PAI/devel -DCMAKE_INSTALL_PREFIX=/home/rafael/Proyecto-PAI/install -G Unix Makefiles
