@@ -9,7 +9,7 @@
   
   <!-- Load object URDF -->
   <param name="$(arg object)_description" 
-    command="$(find xacro)/xacro.py '$(find Proyecto-PAI)/urdf/$(arg object).urdf.xacro'" />
+    command="$(find xacro)/xacro.py '/home/rafael/Proyecto-PAI/urdf/$(arg object).urdf.xacro'" />
 
   <!-- Spawn URDF in Gazebo -->
   <node name="spawn_object" pkg="gazebo_ros" type="spawn_model"
@@ -24,7 +24,7 @@
   </node>
 
   <!-- Launch keyboard teleoperation node -->
-  <node if="$(arg key_teleop)" launch-prefix="xterm -T 'Controllable object' -e" name="object_teleop" pkg="Proyecto-PAI" type="teleop_twist_keyboard.py" >
+  <node if="$(arg key_teleop)" launch-prefix="xterm -T 'Controllable object' -e" name="object_teleop" pkg="/home/rafael/Proyecto-PAI/src" type="teleop_twist_keyboard.py" >
     <remap from="cmd_vel" to="$(arg object)/cmd_vel"/>
   </node>
 

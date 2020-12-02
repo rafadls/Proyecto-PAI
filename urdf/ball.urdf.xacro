@@ -2,7 +2,7 @@
 
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="ball">
 
-  <xacro:include filename="$(find Proyecto-PAI)/urdf/common.urdf.xacro" />
+  <xacro:include filename="/home/rafael/Proyecto-PAI/urdf/common.urdf.xacro" />
 
   <link name="base_footprint">
    <visual>
